@@ -1,0 +1,69 @@
+$ mkdir learngit
+$ cd learngit
+$ pwd
+
+$ git init							
+
+$ git add readme.txt
+$ git commit -m "wrote a readme file
+
+$ git diff readme.txt				
+
+$ git checkout -- readme.txt
+
+$ git log --pretty=oneline
+
+git reset --hard HEAD^
+
+git reset --hard HEAD~100
+
+$ git reflog   Git提供了一个命令git reflog用来记录你的每一次命令
+
+rm test.txt
+
+$ git remote add origin git@github.com:michaelliao/learngit.git		为远程仓库取别名
+$ git remote rm origin
+
+
+$ git push -u origin master			第一次往远程服务器push代码
+
+$ git push origin master
+
+
+$ git checkout -b dev   创建并切换分支
+$ git branch dev        创建分支
+$ git checkout dev	切换分支
+
+$ git branch		查看分支
+git branch -d feature-vulcan	删除分支
+git branch -D feature-vulcan	强制删除分支
+
+
+$ git merge dev   	合并指定分支到当前分支
+
+$ git log --graph --pretty=oneline --abbrev-commit
+
+git stash list
+
+git stash
+
+git stash apply    	恢复stash
+git stash drop		删除stash
+git stash pop		恢复并删除stash
+
+git tag v1.0  		打标签
+$ git tag		查看标签
+$ git tag v0.9 6224937  根基commit ID打标签
+$ git show v0.9
+$ git tag -a v0.1 -m "version 0.1 released" 3628164
+
+
+
+git remote add eos git@192.168.17.9:develop/eos.git
+git remote add ctg-module git@192.168.17.9:develop/ctg-module.git
+git remote add service-user git@192.168.17.9:develop/ctg-service-user.git
+git remote add service-customer git@192.168.17.9:develop/ctg-service-customer.git
+git remote add ctg-facade-user git@192.168.17.9:develop/ctg-facade-user.git
+git remote add ctg-facade-customer git@192.168.17.9:develop/ctg-facade-customer.git
+
+
